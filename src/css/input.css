@@ -51,7 +51,7 @@
 }
 
 .main-menu a {
-  @apply font-semibold text-lg transition ease-out drop-shadow-textShadow;
+  @apply font-semibold text-base lg:text-lg transition ease-out drop-shadow-textShadow;
   font-family: "Poppins", system-ui, sans-serif;
 }
 
@@ -60,8 +60,13 @@
   @apply text-themeColor;
 }
 .common-btn {
-  @apply bg-themeColor px-4 py-2.5 text-white rounded font-semibold hover:text-notblack transition-all;
+  @apply bg-themeColor text-sm lg:text-lg px-4 py-2 lg:py-2.5 text-white rounded font-semibold hover:text-notblack transition-all ease-in-out;
 }
+
+.banner-btn {
+  @apply bg-themeColor text-base lg:text-lg px-2 lg:px-4 py-2.5 text-white rounded font-semibold hover:text-notblack transition-all ease-in-out w-[80%] lg:w-auto;
+}
+
 #leadid_tcpa_disclosure:checked + label .tcpa_checkbox:before,
 #leadid_tcpa_disclosure:checked + label .tcpa_checkbox:after {
   border-color: #0079bf;
