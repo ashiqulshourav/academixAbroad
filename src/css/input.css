@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "montserrat", system-ui, sans-serif;
+    @apply: text-notblack;
+    scroll-behavior: smooth;
+  }
+}
+
+.radio-check {
+  @apply flex items-center transition before:transition text-base lg:text-lg font-bold lg:font-semibold text-[#333] py-1.5 pr-[1.2em] lg:pr-8 pl-2 rounded-3xl hover:bg-[#ffdab5] cursor-pointer before:flex before:bg-white before:w-[21px] lg:before:w-[27px] before:h-[21px] lg:before:h-[27px] before:rounded-full before:mr-1.5 before:shadow-radioShadow;
+}
+
+.select2-container--default .select2-selection--single,
+.input-style {
+  @apply text-black bg-[#ecf8fd] text-[.9375rem] h-12 border border-[#a3bac6] rounded-[3px] w-full mt-[5px] mb-3 shadow-textRadioShadow pt-2 pb-[.5625rem] px-2.5;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  @apply ml-[-15px] mt-2 border-t-[7px] border-x-[6px] border-b-0;
+}
+
+.select2-dropdown {
+  @apply z-[9999];
+}
+
+.all-center {
+  @apply flex justify-center items-center;
+}
+
+.Tlink > a {
+  @apply text-[blue] hover:underline;
+}
+
+.hoverUnderline > a {
+  @apply hover:underline;
+}
+
+.button-loading .s-btn {
+  @apply after:block after:w-[45px] after:h-[45px] after:m-auto after:border-[10px] after:mt-[-59px] after:relative after:border-transparent after:rounded-full  after:border-t-white after:animate-buttonSpin;
+}
+
+.button-loading input[type="submit"] {
+  @apply -indent-[9999px];
+}
+
+.main-menu a {
+  @apply font-semibold text-lg transition ease-out drop-shadow-textShadow;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+.main-menu a:hover:not(.btn),
+.main-menu li.active a {
+  @apply text-themeColor;
+}
+.common-btn {
+  @apply bg-themeColor px-4 py-2.5 text-white rounded font-semibold hover:text-notblack transition-all;
+}
+#leadid_tcpa_disclosure:checked + label .tcpa_checkbox:before,
+#leadid_tcpa_disclosure:checked + label .tcpa_checkbox:after {
+  border-color: #0079bf;
+}
