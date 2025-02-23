@@ -558,6 +558,7 @@ html {
   font-family: "montserrat", system-ui, sans-serif;
   @apply: text-notblack;
   scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 
 .relative {
@@ -709,20 +710,12 @@ html {
   padding-bottom: 1.75rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pb-\[100px\] {
+  padding-bottom: 100px;
 }
 
 .pt-2\.5 {
   padding-top: 0.625rem;
-}
-
-.pb-\[200px\] {
-  padding-bottom: 200px;
-}
-
-.pb-\[100px\] {
-  padding-bottom: 100px;
 }
 
 .text-center {
