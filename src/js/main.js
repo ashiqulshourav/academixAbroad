@@ -1,88 +1,95 @@
 // initial form hidden inputs
-document.addEventListener("DOMContentLoaded", function(){
-    // catching values from url params
-    var device = platform.os + (platform.manufacturer ? ' ' + platform.manufacturer : '') + (platform.product ? ' ' + platform.product : '');
-    var affid = getSearchParams('affid');
-    var transaction_id = getSearchParams('externalid');
-    var clickId = getSearchParams('clickId') ?? (getSearchParams('cid') ?? getSearchParams('click_id'));
-    var list_id = getSearchParams('list_id');
-    var ph = getSearchParams('ph');
-    var bread = getSearchParams('bread');
-    var fbclid = getSearchParams('fbclid');
+// document.addEventListener("DOMContentLoaded", function(){
+//     // catching values from url params
+//     var device = platform.os + (platform.manufacturer ? ' ' + platform.manufacturer : '') + (platform.product ? ' ' + platform.product : '');
+//     var affid = getSearchParams('affid');
+//     var transaction_id = getSearchParams('externalid');
+//     var clickId = getSearchParams('clickId') ?? (getSearchParams('cid') ?? getSearchParams('click_id'));
+//     var list_id = getSearchParams('list_id');
+//     var ph = getSearchParams('ph');
+//     var bread = getSearchParams('bread');
+//     var fbclid = getSearchParams('fbclid');
 
-    if (affid)
-        document.querySelector('#affid').value = affid
+//     if (affid)
+//         document.querySelector('#affid').value = affid
 
-    if (bread)
-        document.querySelector('#bread').value = bread
+//     if (bread)
+//         document.querySelector('#bread').value = bread
 
-    if (transaction_id)
-        document.querySelector('#transaction_id').value = transaction_id
+//     if (transaction_id)
+//         document.querySelector('#transaction_id').value = transaction_id
 
-    if (list_id)
-        document.querySelector('#list_id').value = list_id
+//     if (list_id)
+//         document.querySelector('#list_id').value = list_id
 
-    if (device)
-        document.querySelector('#device').value = device
+//     if (device)
+//         document.querySelector('#device').value = device
 
-    if (clickId)
-        document.querySelector('#clickId').value = clickId
+//     if (clickId)
+//         document.querySelector('#clickId').value = clickId
 
-    if (ph)
-        document.querySelector('#ph').value = ph
+//     if (ph)
+//         document.querySelector('#ph').value = ph
 
-    if (fbclid)
-        document.querySelector('#fbclid').value = fbclid
-});
+//     if (fbclid)
+//         document.querySelector('#fbclid').value = fbclid
+// });
 
-function getSearchParams(sParam) {
-    var sPageURL = window.location.search.substring(1),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
+// function getSearchParams(sParam) {
+//     var sPageURL = window.location.search.substring(1),
+//         sURLVariables = sPageURL.split('&'),
+//         sParameterName,
+//         i;
 
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
+//     for (i = 0; i < sURLVariables.length; i++) {
+//         sParameterName = sURLVariables[i].split('=');
 
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-        }
-    }
-    return false;
-}
+//         if (sParameterName[0] === sParam) {
+//             return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+//         }
+//     }
+//     return false;
+// }
 
-function ipinfos() {
-    var city = '';
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://pro.ip-api.com/json?key=uDBlDLE4QL19zpt', true);
-    xhr.onload = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var data = JSON.parse(xhr.responseText);
-            document.getElementById('zip_code').value = data.zip;
-            document.getElementById('city').value = data.city;
-            document.getElementById('state').value = data.region;
+// function ipinfos() {
+//     var city = '';
+//     var xhr = new XMLHttpRequest();
+//     xhr.open('GET', 'https://pro.ip-api.com/json?key=uDBlDLE4QL19zpt', true);
+//     xhr.onload = function () {
+//         if (xhr.readyState === 4 && xhr.status === 200) {
+//             var data = JSON.parse(xhr.responseText);
+//             document.getElementById('zip_code').value = data.zip;
+//             document.getElementById('city').value = data.city;
+//             document.getElementById('state').value = data.region;
 
-            if (typeof data.city != "undefined" || data.city != null || data.city != "") {
-                $(".cityName").html("OF " + data.city.toUpperCase());
-            }
-        } else {
-            console.error(xhr.statusText);
-        }
-    };
-    xhr.onerror = function () {
-        console.error(xhr.statusText);
-    };
-    xhr.send(null);
-}
+//             if (typeof data.city != "undefined" || data.city != null || data.city != "") {
+//                 $(".cityName").html("OF " + data.city.toUpperCase());
+//             }
+//         } else {
+//             console.error(xhr.statusText);
+//         }
+//     };
+//     xhr.onerror = function () {
+//         console.error(xhr.statusText);
+//     };
+//     xhr.send(null);
+// }
 
-ipinfos()
+// ipinfos()
 
 
 
 // Document Ready
 $(document).ready(function(){
+
+    // on scroll header fixed
+    window.onscroll = () => {
+        console.log("Hello")
+    }
+
     // initialize the all input select
-    $('.input_select').select2();
+    // $('.input_select').select2();
+
 
     // scroll to target
     $('.scroll-btn').on('click', function(){

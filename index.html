@@ -62,16 +62,18 @@
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li>
-                  <a href="#booknow" class="btn common-btn">Book Now</a>
+                  <a href="#booknow" class="btn common-btn bookNow">Book Now</a>
                 </li>
               </ul>
-              <a href="#booknow" class="btn common-btn lg:hidden">Book Now</a>
+              <a href="#booknow" class="btn common-btn lg:hidden bookNow"
+                >Book Now</a
+              >
               <button
-                class="lg:hidden flex flex-col justify-center gap-[5px] [&>*]:h-[3px] [&>*]:w-full [&>*]:rounded [&>*]:bg-notblack w-7"
+                class="lg:hidden overflow-hidden flex flex-col justify-center gap-[5px] [&>*]:h-[3px] [&>*]:w-full [&>*]:rounded [&>*]:bg-notblack w-7"
               >
                 <span></span>
-                <span></span>
-                <span></span>
+                <span class="ml-2.5"></span>
+                <span class="ml-[5px]"></span>
               </button>
             </div>
           </div>
@@ -85,21 +87,23 @@
           class="w-full lg:flex max-w-[1400px] pt-2.5 pb-[100px] px-4 lg:py-[15px] lg:px-5 mx-auto"
         >
           <div
-            class="w-full lg:w-6/12 relative flex flex-col items-center justify-center lg:items-baseline lg:min-h-[550px] py-10 lg:py-0"
+            class="w-[90%] lg:w-6/12 relative flex flex-col items-center justify-center lg:items-baseline lg:min-h-[550px] py-10 lg:py-0 mx-auto"
           >
             <h1
-              class="text-2xl text-center lg:text-left lg:text-4xl leading-7 lg:leading-[52px] font-semibold mb-5"
+              class="text-2xl text-center lg:text-left lg:text-4xl leading-9 lg:leading-[52px] font-semibold mb-5"
             >
               Admit your Dream University through
               <span class="font-bold text-3xl lg:text-[48px]"
                 >Academix Abroad</span
               >
             </h1>
-            <p class="mb-8 text-center lg:text-left text-base lg:text-2xl">
+            <p
+              class="mb-8 text-center lg:text-left text-lg lg:text-2xl leading-8 lg:leading-10"
+            >
               We're one of the best, leading and most reputed education
               consultancy firms in Dhaka, Bangladesh
             </p>
-            <button class="banner-btn shadow-ribbonShadow">Our Package</button>
+            <button class="banner-btn shadow-ribbonShadow">Contact Us</button>
           </div>
           <div class="w-full lg:w-6/12 relative">
             <div class="banner-img">
@@ -112,28 +116,94 @@
 
       <!-- Services Section start -->
       <section class="w-full flex min-h-[100px]">
-        <div class="w-full max-w-[1400px] lg:py-[15px] lg:px-5 mx-auto">
+        <div
+          class="w-full max-w-[1400px] px-4 pb-10 lg:py-[15px] lg:px-5 mx-auto"
+        >
           <div class="w-full text-center mb-10">
             <h2 class="text-notblack text-3xl font-semibold text-center">
               Our <span class="text-themeColor">Services</span>
             </h2>
-            <p class="text-lg font-medium">
+            <p
+              class="text-base lg:text-lg font-medium w-[80%] lg:w-auto mx-auto"
+            >
               We provide best service in Education Consultancy.
             </p>
           </div>
-          <div class="services w-full relative">
+          <div class="services w-full relative flex flex-col gap-4">
             <div
-              class="service-box w-full xl:w-3/12 p-10 flex justify-center items-center flex-col bg-white rounded"
+              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
             >
-              <span class="icon">
-                <i class="fa-classic fa-solid fa-pen-to-square fa-fw"></i>
+              <i
+                class="text-5xl text-iconBg fa-classic fa-solid fa-pen-to-square fa-fw"
+              ></i>
+              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+                Nunc Dolor
               </span>
-              Edit
+            </div>
+            <div
+              class="group service-box active shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
+            >
+              <i class="text-5xl text-iconBg fa-solid fa-handshake"></i>
+              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+                Laoreet Orci Massa
+              </span>
+            </div>
+            <div
+              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
+            >
+              <i class="text-5xl text-iconBg fa-solid fa-address-card"></i>
+              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+                Ultricies Bibendum
+              </span>
+            </div>
+            <div
+              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
+            >
+              <i class="text-5xl text-iconBg fa-solid fa-user-group"></i>
+              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+                Diam Nullam Adipiscing
+              </span>
+            </div>
+            <div
+              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
+            >
+              <i class="text-5xl text-iconBg fa-solid fa-file-lines"></i>
+              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+                Urna Suscipit
+              </span>
+            </div>
+            <div
+              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
+            >
+              <i class="text-5xl text-iconBg fa-solid fa-users"></i>
+              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+                Diam Metus
+              </span>
             </div>
           </div>
         </div>
       </section>
       <!-- Services Section End -->
+
+      <!-- About Us Section start -->
+      <section class="w-full flex min-h-[100px]">
+        <div
+          class="w-full max-w-[1400px] px-4 pb-10 lg:py-[15px] lg:px-5 mx-auto"
+        >
+          <div class="w-full text-center mb-10">
+            <h2 class="text-notblack text-3xl font-semibold text-center">
+              About Us
+            </h2>
+            <p
+              class="text-base lg:text-lg font-medium w-[80%] lg:w-auto mx-auto"
+            >
+              We provide best service in Education Consultancy.
+            </p>
+          </div>
+          <div class="services w-full relative flex flex-col gap-4"></div>
+        </div>
+      </section>
+      <!-- About Us Section End -->
     </main>
     <footer class="w-full bg-[#555]">
       <div

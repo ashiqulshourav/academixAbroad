@@ -65,7 +65,16 @@
 }
 
 .banner-btn {
-  @apply bg-themeColor text-base lg:text-lg px-2 lg:px-4 py-2.5 text-white rounded font-semibold hover:text-notblack transition-all ease-in-out w-[80%] lg:w-auto;
+  @apply bg-themeColor text-base lg:text-lg px-2 lg:px-4 py-2.5 text-white rounded font-semibold hover:text-notblack transition-all ease-in-out w-[80%] max-w-[300px] lg:w-auto;
+}
+
+.service-box.active {
+  @apply after:absolute after:top-0 after:left-2/4 after:translate-x-[-50%] after:w-[80%] after:h-2.5 after:rounded-serviceActive after:bg-themeColor;
+}
+
+.service-box.active > span,
+.service-box.active i {
+  @apply text-themeColor;
 }
 
 #leadid_tcpa_disclosure:checked + label .tcpa_checkbox:before,
