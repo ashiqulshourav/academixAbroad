@@ -11,6 +11,14 @@
   }
 }
 
+/* Service css start */
+.service-box {
+  @apply shadow-serviceBoxShadow p-5 py-7 lg:py-10 flex justify-center items-center flex-col bg-white rounded relative text-center w-full sm:w-[calc(calc(100%-1rem)/2)] md:w-[calc(calc(100%-6rem)/3)];
+}
+/* m:calc(calc(100% - 2rem) / 3) xl:w-3/12; */
+
+/* Service css end */
+
 .radio-check {
   @apply flex items-center transition before:transition text-base lg:text-lg font-bold lg:font-semibold text-[#333] py-1.5 pr-[1.2em] lg:pr-8 pl-2 rounded-3xl hover:bg-[#ffdab5] cursor-pointer before:flex before:bg-white before:w-[21px] lg:before:w-[27px] before:h-[21px] lg:before:h-[27px] before:rounded-full before:mr-1.5 before:shadow-radioShadow;
 }

@@ -117,22 +117,20 @@
       <!-- Services Section start -->
       <section class="w-full flex min-h-[100px]">
         <div
-          class="w-full max-w-[1400px] px-4 pb-10 lg:py-[15px] lg:px-5 mx-auto"
+          class="w-full max-w-[1400px] px-4 pb-20 lg:py-[15px] lg:px-5 mx-auto"
         >
           <div class="w-full text-center mb-10">
             <h2 class="text-notblack text-3xl font-semibold text-center">
               Our <span class="text-themeColor">Services</span>
             </h2>
             <p
-              class="text-base lg:text-lg font-medium w-[80%] lg:w-auto mx-auto"
+              class="text-base lg:text-lg font-medium w-[80%] lg:w-auto mx-auto mt-2.5"
             >
               We provide best service in Education Consultancy.
             </p>
           </div>
-          <div class="services w-full relative flex flex-col gap-4">
-            <div
-              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
-            >
+          <div class="services w-full relative flex flex-wrap gap-4 md:gap-6">
+            <div class="service-box">
               <i
                 class="text-5xl text-iconBg fa-classic fa-solid fa-pen-to-square fa-fw"
               ></i>
@@ -140,41 +138,33 @@
                 Nunc Dolor
               </span>
             </div>
-            <div
-              class="group service-box active shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
-            >
+            <div class="group service-box active">
               <i class="text-5xl text-iconBg fa-solid fa-handshake"></i>
               <span class="icon mt-3 text-xl font-semibold text-iconBg">
                 Laoreet Orci Massa
               </span>
             </div>
-            <div
-              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
-            >
+            <div class="service-box">
               <i class="text-5xl text-iconBg fa-solid fa-address-card"></i>
               <span class="icon mt-3 text-xl font-semibold text-iconBg">
                 Ultricies Bibendum
               </span>
             </div>
-            <div
-              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
-            >
+            <div class="service-box">
               <i class="text-5xl text-iconBg fa-solid fa-user-group"></i>
-              <span class="icon mt-3 text-xl font-semibold text-iconBg">
+              <span
+                class="icon mt-3 text-xl font-semibold text-iconBg text-center"
+              >
                 Diam Nullam Adipiscing
               </span>
             </div>
-            <div
-              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
-            >
+            <div class="service-box">
               <i class="text-5xl text-iconBg fa-solid fa-file-lines"></i>
               <span class="icon mt-3 text-xl font-semibold text-iconBg">
                 Urna Suscipit
               </span>
             </div>
-            <div
-              class="service-box shadow-serviceBoxShadow w-full xl:w-3/12 p-5 py-7 flex justify-center items-center flex-col bg-white rounded relative"
-            >
+            <div class="service-box">
               <i class="text-5xl text-iconBg fa-solid fa-users"></i>
               <span class="icon mt-3 text-xl font-semibold text-iconBg">
                 Diam Metus
@@ -195,12 +185,34 @@
               About Us
             </h2>
             <p
-              class="text-base lg:text-lg font-medium w-[80%] lg:w-auto mx-auto"
+              class="text-base lg:text-lg font-medium w-[80%] lg:w-auto mx-auto mt-2.5"
             >
               We provide best service in Education Consultancy.
             </p>
           </div>
-          <div class="services w-full relative flex flex-col gap-4"></div>
+          <div
+            class="about-us w-full relative flex flex-col md:flex-row gap-4 md:gap-10"
+          >
+            <div class="flex flex-col w-full">
+              <p>
+                We empower students to achieve their academic dreams. Our expert
+                consultants offer personalized guidance on university selection
+                and application processes. We simplify complex procedures,
+                maximizing your chances of acceptance. We're committed to your
+                long-term success, providing the resources needed to thrive in
+                your chosen field.
+              </p>
+
+              <button
+                class="mt-10 py-4 px-10 text-red border border-red rounded transition hover:bg-red hover:text-white"
+              >
+                Ream More
+              </button>
+            </div>
+            <div class="flex items-center justify-center mt-10 md:mt-0">
+              <img src="./src/img/about-us.jpg" class="rounded" alt="" />
+            </div>
+          </div>
         </div>
       </section>
       <!-- About Us Section End -->
